@@ -1,6 +1,6 @@
 /* TODO:
  * 1. Buatlah sebuah fungsi bernama `hello` yang menerima 2 argumen: `name` dan `origin`.
- * 2. Kembalikan fungsi tersebut dengan nilai string dengan templat:
+ * 2. Kembalikan fungsi tersebut dengan nilai string dengan template:
  *    "Halo! Nama saya (name). Saya tinggal di (origin)."
  *    Contoh: Jika `name` bernilai 'Fulan' dan `origin` bernilai 'Jakarta', fungsi harus mengembalikan:
  *    "Halo! Nama saya Fulan. Saya tinggal di Jakarta.".
@@ -10,3 +10,10 @@
  * 5. Buatlah variabel bernama `indra` yang menampung nilai dari hasil pemanggilan fungsi `hello`
  *    yang diberikan argumen name = 'Indra' tanpa memberikan nilai origin.
  */
+function hello (name, origin = `Bandung`) {
+    return `Halo! Nama saya ${name}. Saya tinggal di ${origin}.`;
+}
+const rahmat = hello(`Rahmat`,`Semarang`);
+console.log(rahmat);
+const indra = hello(`Indra`);
+console.log(indra);
